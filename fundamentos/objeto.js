@@ -27,6 +27,7 @@ console.log(saudacao())
 
 console.log(pessoa)
 console.log(pessoa.nome)
+console.log(pessoa.altura)
 console.log(pessoa.andar())
 console.log(carro)
 
