@@ -144,3 +144,49 @@ var filtroEMap = numbers.map(function(item, indice, array){
 })
 
 console.log('ola', filtroEMap)
+
+
+//Método Reduce
+var reduce = numbers.reduce(function(acumulado, item, indice, array){
+    return acumulado + item
+}, 0) //esse zero é o valor do acumulado, vc define esse valor no final da function
+
+console.log('valor do reduce', reduce)
+
+
+var nome = ['v', 'i', 't', 'o', 'r']
+var reduceNome = nome.reduce(function(acumulado, item, indice, array){
+    return acumulado + item
+})
+console.log('valor do reduce nome:', reduceNome)
+
+
+var reduceNomeInverso = nome.reduceRight(function(acumulado, item, indice, array){
+    return acumulado + item
+})
+console.log('valor do reduce nome inverso:', reduceNomeInverso)
+
+
+//IndexOf
+//Retorna o indice do item do array, ou seja, a posição do item no array
+console.log(numbers.indexOf(4))
+
+//Caso não tenha o item no array ele retorna '-1'
+console.log(numbers.indexOf(10))
+
+console.log(nome.indexOf('r'))
+
+//O segundo elemento defini de onde ele vai começar sua busca pelo array
+console.log(nome.indexOf('r', 3))
+console.log(nome.indexOf('i', 2))
+
+//lastIndexOf
+//A mesma coisa entretanto sua busca começa pelo final do array
+console.log('LastIndexOf: ')
+console.log(nome.lastIndexOf('r'))
+
+
+//Método isArray
+//Serve para verificar se é um array ou não
+//Ele retorna true ou false
+console.log(Array.isArray(nome))
